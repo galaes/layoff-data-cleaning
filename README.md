@@ -2,7 +2,7 @@
 
 ## Table of Contents
   - [Project Overview](#project-overview)
-  - [Data Sources](#data-sources)
+  - [Data Source](#data-source)
   - [Tools](#tools)
   - [Data Cleaning](#data-cleaning)
   - [Key Achievements](#key-achievements)
@@ -11,10 +11,15 @@
 
 This project aims to develop the necessary steps for data cleaning in the Layoffs by Industry dataset, such as finding, removing duplicates, and standardizing the data.
 
-### Data Sources
+### Data Source
 
-Layoffs by industry dataset (https://github.com/AlexTheAnalyst/MySQL-YouTube-Series/blob/main/layoffs.csv)
+Layoffs by industry dataset (https://rb.gy/6we5n5)
 
 ### Tools
 
-* MySQL - Data Cleaning
+- MySQL - Data Cleaning
+
+### Data Cleaning
+
+
+
