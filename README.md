@@ -23,7 +23,7 @@ Layoffs by industry dataset (https://rb.gy/6we5n5)
 
 #### Data Cleaning
 
-[Data Cleaning - Layoffs by Industry - SQL code](https://github.com/galaes/layoffs-data-cleaning/blob/f14a7af736afc0bb9586013d708fc5df1bc429f4/Full%20Project%20%20-%20Data%20Cleaning%20in%20SQL.sql)
+[Data Cleaning - SQL code](https://github.com/galaes/layoffs-data-cleaning/blob/f14a7af736afc0bb9586013d708fc5df1bc429f4/Full%20Project%20%20-%20Data%20Cleaning%20in%20SQL.sql)
 
 - Find and remove duplicates
 
@@ -55,7 +55,10 @@ PARTITION BY company, location,
 industry, total_laid_off, percentage_laid_off,`date`,stage,
 country, funds_raised_millions) AS row_num
 FROM layoffs_staging;
+```
+![image](images/row_column.png)
 
+```sql
 -- Remove duplicates
 DELETE
 FROM layoffs_staging2
@@ -90,6 +93,9 @@ UPDATE layoffs_staging2
 SET country = TRIM(TRAILING '.' FROM country)
 WHERE country LIKE 'United States%';
 ```
+![image](images/location_names.png)
+![image](images/industry_names.png)
+
 
 - Change the date from string to date format
 
@@ -102,6 +108,8 @@ SET `date` = STR_TO_DATE(`date`, '%m/%d/%Y');
 ALTER TABLE layoffs_staging2
 MODIFY COLUMN `date` DATE;
 ```
+
+![image](images/date.png)
 
 - Dealing with nulls and blank spaces in Industry column
 
@@ -150,6 +158,7 @@ AND percentage_laid_off IS NULL;
 ALTER TABLE layoffs_staging2
 DROP COLUMN row_num;
 ```
+![image](images/final_table.png)
 
 ### Key Achievements
 
