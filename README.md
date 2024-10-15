@@ -152,6 +152,7 @@ DROP COLUMN row_num;
 ```
 
 ### Key Achievements
-- Improved Data Consistency: Standardized date formats and unified values in the 'Sold as Vacant' field to 'Yes' or 'No' using SQL, significantly enhancing data consistency and readability.
-- Managed Missing Values: Actively identified and supplemented missing property addresses, ensuring the completeness of the dataset.
-- Optimized Data Structure: Separated address information into individual columns and removed unused columns, increasing the ease of analysis.
+
+- Managed Missing Values: Actively identified and supplemented missing values in columns such as industry and total laid off, ensuring the completeness of the dataset.
+- Improved Data Consistency: Standardized industry, location, and country names using SQL, significantly enhancing data consistency and readability.
+- Optimized Data Structure: Changed format type in some columns and removed unused columns, increasing the ease of analysis.
