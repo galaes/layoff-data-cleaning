@@ -58,7 +58,7 @@ WHERE row_num > 1;
 UPDATE layoffs_staging2
 SET company = TRIM(company);
 
--- standarzing industry names
+-- standardizing industry names
 UPDATE layoffs_staging2
 SET industry = 'Crypto'
 WHERE industry LIKE 'Crypto%';
