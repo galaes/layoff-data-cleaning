@@ -13,11 +13,21 @@ This project aims to develop the necessary steps for data cleaning in the Layoff
 
 ### Dataset
 
-Layoffs by industry dataset (https://rb.gy/6we5n5)
+The dataset of layoffs from March 2020 to March 2023 (https://rb.gy/6we5n5) contains the following key features:
+
+- Company: Name of the company
+- Location: Location of the company
+- Industry: Industry of the company
+- Total Laid off: Total of employees laid off
+- Percentage Laid off: Percentage of laid off respects to the total of employees
+- Date: date of the laid-off
+- Stage: Business phase or funding stage the company is in
+- Country: Country of the company
+- Funds Raised Millions: Amount of capital the company has raised from investors in millions of dollars
 
 ### Tools
 
-- MySQL - Data Cleaning
+- MySQL for Data Cleaning
 
 ### Methodology
 
@@ -163,5 +173,5 @@ DROP COLUMN row_num;
 ### Key Achievements
 
 - Managed Missing Values: Actively identified and supplemented missing values in columns such as industry and total laid off, ensuring the completeness of the dataset.
-- Improved Data Consistency: Standardized industry, location, and country names using SQL, significantly enhancing data consistency and readability.
+- Improved Data Consistency: Standardized industry, location, and country names using MySQL, significantly enhancing data consistency and readability.
 - Optimized Data Structure: Changed format type in some columns and removed unused columns, increasing the ease of analysis.
