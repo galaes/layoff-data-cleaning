@@ -66,7 +66,7 @@ industry, total_laid_off, percentage_laid_off,`date`,stage,
 country, funds_raised_millions) AS row_num
 FROM layoffs_staging;
 ```
-![image](images/row_column.png)
+<img src="images/row_column.png" width="90%" alt="images">
 
 ```sql
 -- Remove duplicates
@@ -103,9 +103,8 @@ UPDATE layoffs_staging2
 SET country = TRIM(TRAILING '.' FROM country)
 WHERE country LIKE 'United States%';
 ```
-![image](images/location_names.png)
-![image](images/industry_names.png)
-
+<img src="images/location_names.png" width="15%" alt="images">
+<img src="images/industry_names.png" width="12%" alt="images">
 
 - Change the date from string to date format
 
@@ -119,7 +118,7 @@ ALTER TABLE layoffs_staging2
 MODIFY COLUMN `date` DATE;
 ```
 
-![image](images/date.png)
+<img src="images/date.png" width="10%" alt="images">
 
 - Dealing with nulls and blank spaces in Industry column
 
@@ -168,7 +167,8 @@ AND percentage_laid_off IS NULL;
 ALTER TABLE layoffs_staging2
 DROP COLUMN row_num;
 ```
-![image](images/final_table.png)
+
+<img src="images/final_table.png" width="80%" alt="images">
 
 ### Key Achievements
 
